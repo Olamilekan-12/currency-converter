@@ -34,7 +34,7 @@ const CurrencyDropdown = ({
                         })
                     }
                 </select>
-                <button className='absolute inset-y-0 right-0 pr-5 flex items-center text-sm leading-5' onClick={() => handleFavorite(currency)}>
+                <button className='absolute inset-y-0 right-0 pr-5 flex items-center text-sm leading-5 cursor-pointer' onClick={() => handleFavorite(currency)}>
                     {isFavorite(currency) ? <HiStar/> : <HiOutlineStar />}
                 </button>
             </div>

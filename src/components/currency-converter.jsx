@@ -52,7 +52,7 @@ const handleFavorite = (currency) => {
         updatedFavourites.push(currency)
      }
      localStorage.setItem("favorites", JSON.stringify(updatedFavourites))
-
+setFavorites(updatedFavourites)
 }
 
 const swapCurrencies = ()=> {
